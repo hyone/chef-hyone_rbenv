@@ -1,0 +1,43 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+  socket: <%= ENV['DOCKER_HOST'] %>
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-12.04
+    driver_config:
+      image: ubuntu:12.04
+  - name: centos-6.4
+    driver_config:
+      image: centos:6.4
+
+suites:
+  - name: default
+    run_list:
+      - recipe[hyone_rbenv-test]
+    attributes:
+      hyone_rbenv:
+        user:  hoge
+        group: hoge
+        home: /home/hoge
+        default: 2.0.0-p353
+        versions:
+          - version: 2.0.0-p353
+            configure_opts: --disable-install-rdoc
+        setup_bash: true
+
+  - name: system
+    run_list:
+      - recipe[hyone_rbenv-test]
+    attributes:
+      hyone_rbenv:
+        user:  root
+        path: /usr/local/rbenv
+        default:  2.1.0
+        versions:
+          - version: 2.1.0
+        setup_bash: true

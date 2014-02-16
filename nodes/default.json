@@ -1,0 +1,23 @@
+{
+  "hyone_rbenv": {
+    "user":  "vagrant",
+    "group": "vagrant",
+    "home": "/home/vagrant",
+    "default":  "2.0.0-p353",
+    "versions": [
+      {
+        "version": "2.0.0-p353",
+        "configure_opts": "--disable-install-rdoc"
+      },
+      {
+        "version": "2.1.0",
+        "configure_opts": "--disable-install-rdoc"
+      }
+    ],
+    "setup_bash": true
+  },
+
+  "run_list": [
+    "recipe[hyone_rbenv::default]"
+  ]
+}
