@@ -18,6 +18,11 @@ group _group do
   action [:create]
 end
 
+case
+when platform?('ubuntu')
+  include_recipe 'apt'
+end
+
 # rbenv
 
 include_recipe 'hyone_rbenv::default'
