@@ -15,7 +15,7 @@
         "configure_opts": "--disable-install-rdoc"
       },
       {
-        "version": "2.1.0",
+        "version": "2.1.4",
         "configure_opts": "--disable-install-rdoc"
       }
     ],
@@ -61,7 +61,7 @@ install gems with a ruby managed by rbenv:
 hyone_rbenv_gem 'bundler' do
   user 'vagrant'
   version '1.5.1'
-  ruby_version '2.1.0'
+  ruby_version '2.1.4'
 end
 ```
 

@@ -10,7 +10,7 @@
         "configure_opts": "--disable-install-rdoc"
       },
       {
-        "version": "2.1.0",
+        "version": "2.1.4",
         "configure_opts": "--disable-install-rdoc"
       }
     ],
