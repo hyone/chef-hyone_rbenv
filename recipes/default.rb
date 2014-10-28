@@ -20,6 +20,7 @@ when 'debian'
   package 'libreadline-dev'
   package 'zlib1g-dev'
 end
+package 'tar'
 
 include_recipe 'build-essential'
 include_recipe 'git'
