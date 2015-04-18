@@ -4,9 +4,9 @@ require 'spec_helper'
 _user       = 'root'
 _rbenv_root = '/usr/local/rbenv'
 _versions = %w{
-  2.1.4
+  2.2.1
 }
-_default_version = '2.1.4'
+_default_version = '2.2.1'
 
 set :path, "#{::File.join(_rbenv_root, 'bin')}:#{::File.join(_rbenv_root, 'shims')}:$PATH"
 

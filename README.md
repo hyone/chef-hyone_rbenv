@@ -8,14 +8,14 @@
     "user":  "hoge",
     "group": "hoge",
     "path": "/home/hoge/local/rbenv",
-    "default":  "2.0.0-p353",
+    "default":  "2.2.1",
     "versions": [
       {
-        "version": "2.0.0-p353",
+        "version": "2.2.1",
         "configure_opts": "--disable-install-rdoc"
       },
       {
-        "version": "2.1.4",
+        "version": "2.1.5",
         "configure_opts": "--disable-install-rdoc"
       }
     ],
@@ -39,7 +39,7 @@ install rbenv and ruby implementations
 install ruby implementation:
 
 ```ruby
-hyone_rbenv_install '2.0.0-p159' do
+hyone_rbenv_install '2.2.1' do
   user 'root'
   rbenv_root "/usr/local/rbenv"
   configure_opts "--disable-install-rdoc"
@@ -49,7 +49,7 @@ end
 set global ruby implementation:
 
 ```ruby
-hyone_rbenv_global '1.9.3-p392' do
+hyone_rbenv_global '2.1.5' do
   user 'root'
   rbenv_root "/usr/local/rbenv"
 end

@@ -27,9 +27,9 @@ suites:
         user:  hoge
         group: hoge
         home: /home/hoge
-        default: 2.0.0-p353
+        default: 2.1.5
         versions:
-          - version: 2.0.0-p353
+          - version: 2.1.5
             configure_opts: --disable-install-rdoc
         setup_bash: true
 
@@ -40,7 +40,7 @@ suites:
       hyone_rbenv:
         user:  root
         path: /usr/local/rbenv
-        default:  2.1.4
+        default:  2.2.1
         versions:
-          - version: 2.1.4
+          - version: 2.2.1
         setup_bash: true
