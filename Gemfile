@@ -15,6 +15,7 @@ group :integration do
 end
 
 group :docker do
+  gem 'kitchen-docker_cli'
   gem 'kitchen-docker'
 end
 
