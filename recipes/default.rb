@@ -12,10 +12,12 @@
 
 case node['platform_family']
 when 'rhel', 'fedora'
+  package 'libffi-devel'
   package 'openssl-devel'
   package 'readline-devel'
   package 'zlib-devel'
 when 'debian'
+  package 'libffi-dev'
   package 'libssl-dev'
   package 'libreadline-dev'
   package 'zlib1g-dev'
