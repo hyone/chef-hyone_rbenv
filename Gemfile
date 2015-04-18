@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'chef', '~> 11.16.0'
+gem 'chef', '~> 12.2.0'
 gem 'berkshelf'
 
 group :test do
  gem 'chefspec'
- gem 'foodcritic', '~> 3.0.3'
+ gem 'foodcritic', '~> 4.0.0'
  gem 'tailor'
 end
 
@@ -21,4 +21,3 @@ end
 group :vagrant do
   gem 'kitchen-vagrant'
 end
-
